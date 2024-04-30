@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div id="selected-items"></div>
+
+<a href='/tick'><button onclick="placeOrder()">Place Order</button></a>
+
+<script>
+  // Function to get selected items from the URL query string
+  function getSelectedItems() {
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const items = [];
+    urlParams.forEach(function(value, key) {
+      items.push(key + ": " + value);
+    });
+    return items;
+  }
+
+  // Function to display selected items
+  function displaySelectedItems() {
+    const selectedItems = getSelectedItems();
+    const selectedItemsDiv = document.getElementById("selected-items");
+    selectedItemsDiv.innerHTML = "<h3>Selected Items:</h3><ul>";
+    selectedItems.forEach(function(item) {
+      selectedItemsDiv.innerHTML += "<li>" + item + "</li>";
+    });
+    selectedItemsDiv.innerHTML += "</ul>";
+  }
+
+  // Function to place order
+  function placeOrder() {
+    alert("Order placed successfully!");
+    // You can redirect to a confirmation page or perform other actions here
+  }
+
+  // Display selected items when the page loads
+  window.onload = function() {
+    displaySelectedItems();
+  };
+</script>
+
+</body>
+</html>

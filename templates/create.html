@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create New Account</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='create.css')}}">
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Create New Account</h2>
+    <form method="post" action="/create">
+      <div class="input-group">
+        <label for="email">Email or mobile number</label>
+        <input type="email" id="email" name="username" required>
+      </div> 
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <a href='/home'><button type="submit">Create Account</button></a>
+    </form>
+    
+  </div>
+</body>
+</html>

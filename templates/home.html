@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TPR - The Pista House</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-size: cover;
+      background-position: center;
+      background-image: url('/static/pexels-pixabay-262047.jpg'); 
+      height: 100vh; /* Ensures background covers entire viewport */
+      position: relative; /* Required for absolute positioning of overlay text */
+    }
+    
+
+    .welcome-container {
+      /* text-align:250px; */
+      margin-top:50px;
+      padding-top: 400px;
+      margin-left: 700px;
+    }
+
+    h1 {
+      color: white;
+      font-size: 36px;
+    }
+
+    p {
+      color: #ffffff;
+      font-size: 18px;
+    }
+
+    img {
+      justify-content:250px;
+      display:250px;
+      padding-left:5px;
+      height: 400px;
+      width: 400px;
+
+    }
+
+    .order-button {
+      background-color: green;
+      color: white;
+      padding: 10px ;
+      font-size: 20px;
+      border:none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+    }
+
+    .order-button:hover {
+      background-color: #d8418b;
+    }
+  </style>
+</head>
+
+<body>
+   <div class="welcome-container">
+    <h> The Pista House</h1>
+    <p>Welcome to The Pista House! Ready to order?</p>
+    <a href='/menu'><button class="order-button">ORDER NOW</button></a>
+  </div>
+</body>
+
+</html>

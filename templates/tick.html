@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Placed</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Adjusted height */
+        background-image: url('https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Replace 'background-image.jpg' with the path to your image */
+        background-size: cover; /* Cover the entire background */
+        background-position: center; /* Center the background */
+        color: white; /* Set text color to white */
+    }
+    
+    .container {
+        text-align:center;
+        padding: 20px; /* Adding padding to the container */
+        border-radius: 10px; /* Adding border-radius to the container */
+    }
+    
+    .circle {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color:green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 20px; /* Center the circle horizontally and add margin at the bottom */
+    }
+    
+    .check-mark {
+        width: 80px;
+        height: 80px;
+        fill:white;
+    }
+    
+    .message {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .explore-button {
+        background-color: #25d366;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    .explore-button:hover {
+        background-color: #1eae5d;
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="circle">
+        <svg class="check-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+        </svg>
+    </div>
+   <p class="message">Your order has been placed.<br> Thank you!</p>
+   <a href="page2.html"> <button class="explore-button">Explore More</button></a>
+</div>
+
+</body>
+</html>
